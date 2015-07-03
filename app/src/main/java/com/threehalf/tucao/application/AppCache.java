@@ -75,5 +75,95 @@ public class AppCache {
 
         return uerInfo;
     }
+
+
+
+    private static String b = "sount_notice";
+    private static String c = "vibrate_notice";
+    private static String d = "all_notice";
+    private static String e = "comment_notice";
+
+
+
+    /**
+     * 设置总开关
+     * @param paramBoolean
+     */
+    public void setAllNotice(boolean paramBoolean)
+    {
+        SharedPreferences.Editor localEditor = mSharedPreferences.edit();
+        localEditor.putBoolean(ALL_NOTICE, paramBoolean);
+        localEditor.commit();
+        localEditor.clear();
+    }
+    /**
+     * 获取总提示
+     * @return
+     */
+    public boolean getAllNotice()
+    {
+        return mSharedPreferences.getBoolean(ALL_NOTICE, true);
+    }
+    /**
+     * 获取声音提示
+     * @return
+     */
+    public boolean getSuntNotice()
+    {
+        return this.mSharedPreferences.getBoolean(SOUNT_NOTICE, true);
+    }
+
+    /**
+     * 设置声音提示
+     * @param paramBoolean
+     */
+    public void setSountNotice(boolean paramBoolean)
+    {
+        SharedPreferences.Editor localEditor = mSharedPreferences.edit();
+        localEditor.putBoolean(SOUNT_NOTICE, paramBoolean);
+        localEditor.commit();
+        localEditor.clear();
+    }
+    /**
+     * 设置震动提示
+     * @param paramBoolean
+     */
+    public void setVibrateNotice(boolean paramBoolean)
+    {
+        SharedPreferences.Editor localEditor = mSharedPreferences.edit();
+        localEditor.putBoolean(VIBRATE_NOTICE, paramBoolean);
+        localEditor.commit();
+        localEditor.clear();
+    }
+    /**
+     * 获取震动提示
+     * @return
+     */
+    public boolean getVibrateNotice()
+    {
+        return this.mSharedPreferences.getBoolean(VIBRATE_NOTICE, true);
+    }
+
+    /**
+     * 设置评论提示
+     * @param paramBoolean
+     */
+    public  void setCommentNotice(boolean paramBoolean)
+    {
+        SharedPreferences.Editor localEditor = mSharedPreferences.edit();
+        localEditor.putBoolean(COMMENT_NOTICE, paramBoolean);
+        localEditor.commit();
+        localEditor.clear();
+    }
+
+    /**
+     * 获取震动提示
+     * @return
+     */
+    public boolean getCommentNotice()
+    {
+        return this.mSharedPreferences.getBoolean(COMMENT_NOTICE, true);
+    }
+
 }
 
