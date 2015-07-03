@@ -61,7 +61,7 @@ public class MyPushMessageReceiver extends BroadcastReceiver {
             }
             if ((localMessageModel.getTid() != null) && (localMessageModel.getTid().length() > 0) && (localMessageModel.getTid().equals(this.currentUser.getObjectId()))) {
                 if (localMessageModel.getfId().equals(this.currentUser.getObjectId())) {
-                    BmobLog.i("parseMessage错误：自己评论自己的");
+                    BmobLog.i("parseMessage错误：自己评论自己的 ");
                     return;
                 }
 //                 updateContent(paramContext, localMessageModel);
