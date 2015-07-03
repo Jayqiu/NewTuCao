@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class AlertEntity  implements Serializable
 {
     private String msg;
-    private String pType;
+    private String pType;  // 1000 系统推荐
     private String tObj;
 
     public String getMsg()

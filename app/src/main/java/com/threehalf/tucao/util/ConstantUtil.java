@@ -22,7 +22,7 @@ public class ConstantUtil   {
     public static final int COMMENT_TYPE_COMMENT = 1000;
     public static final int COMMENT_TYPE_REPLY = 1001;
     public static final String PHSH_MSG_TYPE_TUCAO = "1000";
-    public static final String IMG_ACTION_TYPE = " IMG_ACTION_TYPE";
-    public static final String  IMG_ACTION_TYPE_EDIT = " IMG_ACTION_TYPE_EDIT";
-    public static final String  IMG_ACTION_TYPE_LOOK_OVER = " IMG_ACTION_TYPE_LOOK_OVER";
+    public static final String IMG_ACTION_TYPE = "IMG_ACTION_TYPE";
+    public static final String  IMG_ACTION_TYPE_EDIT = "IMG_ACTION_TYPE_EDIT";
+    public static final String  IMG_ACTION_TYPE_LOOK_OVER = "IMG_ACTION_TYPE_LOOK_OVER";
 }
