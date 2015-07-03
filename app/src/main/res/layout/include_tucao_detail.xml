@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_ten"
+        android:paddingTop="@dimen/margin_ten"
+        android:paddingRight="@dimen/margin_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.threehalf.tucao.view.CircleImageView
+                android:id="@+id/iv_itme_avater"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                wave:border_width="2.0dip"
+                wave:border_color="@color/white" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_fifteen"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left|center"
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five" />
+
+                <TextView
+                    android:textSize="@dimen/text_size_ten"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_tucao_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five"
+                    android:layout_marginTop="@dimen/margin_five" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.threehalf.tucao.view.EmoticonsTextView
+            android:textSize="@dimen/text_size_fifteen"
+            android:textColor="@color/black"
+            android:layout_gravity="left|center"
+            android:id="@+id/tv_tucaocontent"
+            android:paddingLeft="@dimen/margin_ten"
+            android:paddingRight="@dimen/margin_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_ten" />
+
+        <ImageView
+            android:gravity="left"
+            android:id="@+id/iv_tucaoimg"
+            android:paddingLeft="@dimen/margin_ten"
+            android:paddingRight="@dimen/margin_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/margin_five"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_ten">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_praise_num"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:text="40赞" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_commentnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:text="320吐槽" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/ll_itme_praise_icon"
+            android:paddingTop="@dimen/margin_five"
+            android:paddingBottom="@dimen/margin_five"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_itme_praise_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:textColor="@color/theme_default_primary"
+                android:gravity="bottom|center"
+                android:id="@+id/tv_itme_is_praise"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:text="赞"
+                android:layout_toRightOf="@id/iv_itme_praise_icon"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:textSize="@dimen/text_size_eighteen"
+                android:textColor="@color/theme_default_primary"
+                android:gravity="bottom|center"
+                android:id="@+id/tv_praise"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_alignBottom="@id/iv_itme_praise_icon"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/ll_itme_comment_icon"
+            android:paddingTop="@dimen/margin_five"
+            android:paddingBottom="@dimen/margin_five"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_itme_hottest_comment_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/theme_default_primary"
+                android:gravity="top|center"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:text="评论" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/ll_itme_share_icon"
+            android:paddingTop="@dimen/margin_five"
+            android:paddingBottom="@dimen/margin_five"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:gravity="center"
+                android:id="@+id/iv_itme_hottest_share_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/theme_default_primary"
+                android:gravity="top|center"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:text="分享" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

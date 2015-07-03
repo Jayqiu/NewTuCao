@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:transitionName="actionBar" />
+
+    <EditText
+        android:gravity="top|left|center"
+        android:id="@+id/et_feedback_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:hint="你的意见和建议是我们前进的最大动力"
+        android:layout_below="@+id/toolbar" />
+
+    <ScrollView
+        android:id="@+id/sv_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ghostwhite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="right"
+                android:id="@+id/tv_textnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
+                android:text="0/300" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

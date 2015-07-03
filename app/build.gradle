@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.threehalf.tucao"
+        minSdkVersion 8
+        targetSdkVersion 21
+        versionCode 200
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile files('libs/BmobSDK_V3.3.5_0408.jar')
+    compile files('libs/BmobIM_V1.1.8beta_20150408.jar')
+    compile files('libs/baidumapapi_v3_3_0.jar')
+    compile files('libs/universal-image-loader-1.9.2-sources.jar')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+}

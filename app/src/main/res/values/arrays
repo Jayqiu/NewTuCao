@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="is_anonymous_items">
+        <item>匿名吐槽</item>
+        <item>点名吐槽</item>
+    </string-array>
+    <string-array name="tucao_pic_items">
+        <item>相册选取</item>
+        <item>现在拍照</item>
+        <item>文件选取</item>
+    </string-array>
+    <string-array name="user_sex_items">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+</resources>

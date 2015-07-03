@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:transitionName="actionBar" />
+
+
+    <com.threehalf.tucao.view.EmoticonsEditText
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_above="@+id/sv_bottom"
+        android:layout_below="@+id/toolbar"
+        android:padding="@dimen/margin_five"
+        android:background="@color/white"
+        android:gravity="top|left|center"
+        android:hint="吐槽您的那些事儿..."
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:fillViewport="false"></com.threehalf.tucao.view.EmoticonsEditText>
+
+
+    <ScrollView
+        android:id="@+id/sv_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ghostwhite"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:padding="2.0dip">
+
+                <Button
+                    android:id="@+id/btn_chat_emo"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:background="@drawable/btn_chat_emo_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_textnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25.0dip"
+                    android:layout_margin="@dimen/margin_five"
+                    android:gravity="right|center"
+                    android:text="0/400"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/text_size_fifteen" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_tucao"
+                android:layout_width="65.0dip"
+                android:layout_height="65.0dip"
+                android:layout_margin="@dimen/margin_ten"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_addpic_focused" />
+
+            <LinearLayout
+                android:id="@+id/layout_emo"
+                android:layout_width="fill_parent"
+                android:layout_height="160.0dip"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_emo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

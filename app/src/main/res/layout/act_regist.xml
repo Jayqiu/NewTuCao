@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:transitionName="actionBar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_twenty">
+
+        <EditText
+            android:textSize="@dimen/text_size_fifteen"
+            android:textColor="@color/black"
+            android:id="@+id/et_reg_name"
+
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin_forty"
+            android:hint="注册邮箱"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:textSize="@dimen/text_size_fifteen"
+            android:textColor="@color/black"
+            android:id="@+id/et_reg_pwd"
+
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin_forty"
+            android:hint="注册密码"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:textSize="@dimen/text_size_fifteen"
+            android:textColor="@color/black"
+            android:id="@+id/et_confirm_pwd"
+
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin_forty"
+            android:hint="确认密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+</LinearLayout>

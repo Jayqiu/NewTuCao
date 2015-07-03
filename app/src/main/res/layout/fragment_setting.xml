@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_setting_msg"
+                android:layout_width="fill_parent"
+                android:background="@drawable/btn_gray_bg"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_fifteen"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+
+                    android:paddingLeft="@dimen/margin_twenty"
+                    android:paddingRight="@dimen/margin_twenty"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="@dimen/margin_48"
+                    android:text="消息通知" />
+
+                <View
+                    android:background="@color/medium_gray_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.30000007dip" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_setting_favorable_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_fifteen"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:background="@drawable/btn_gray_bg"
+                    android:paddingLeft="@dimen/margin_twenty"
+                    android:paddingRight="@dimen/margin_twenty"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="@dimen/margin_48"
+                    android:text="给我好评" />
+
+                <View
+                    android:background="@color/medium_gray_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.30000007dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_setting_recommend_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_fifteen"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:background="@drawable/btn_gray_bg"
+                    android:paddingLeft="@dimen/margin_twenty"
+                    android:paddingRight="@dimen/margin_twenty"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="@dimen/margin_48"
+                    android:text="推荐我们" />
+
+                <View
+                    android:background="@color/medium_gray_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.30000007dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_setting_recommend_you"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/text_size_fifteen"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+                        android:background="@drawable/btn_gray_bg"
+                        android:paddingLeft="@dimen/margin_twenty"
+                        android:paddingRight="@dimen/margin_twenty"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/margin_48"
+                        android:text="为你推荐"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:textColor="@color/theme_default_primary"
+                        android:gravity="center"
+                        android:id="@+id/tv_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_48"
+                        android:layout_marginRight="@dimen/margin_twenty"
+                        android:text="0金币"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/medium_gray_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.30000007dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_setting_about_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_fifteen"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:background="@drawable/btn_gray_bg"
+                    android:paddingLeft="@dimen/margin_twenty"
+                    android:paddingRight="@dimen/margin_twenty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_48"
+                    android:textColor="@color/black"
+                    android:text="关于版本" />
+
+                <View
+                    android:background="@color/medium_gray_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.30000007dip" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

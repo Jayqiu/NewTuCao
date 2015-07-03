@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:elevation="4dp"
+        android:transitionName="actionBar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu_drawer"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_gravity="start"
+            android:id="@+id/menu_frame"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"></FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <com.threehalf.tucao.view.materialdesign.ButtonFloat
+        android:layout_width="@dimen/margin_48"
+        android:layout_height="@dimen/margin_48"
+        android:id="@+id/btn_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:background="#1E88E5"
+        materialdesign:animate="true"
+        materialdesign:iconDrawable="@mipmap/ic_action_new"></com.threehalf.tucao.view.materialdesign.ButtonFloat>
+</RelativeLayout>
+
+
+

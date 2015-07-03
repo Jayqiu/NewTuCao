@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    app:cardMaxElevation="@dimen/margin_five"
+    app:cardCornerRadius="@dimen/margin_five"
+    app:contentPadding="@dimen/margin_five"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_ten" >
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_ten"
+            android:paddingRight="@dimen/margin_ten" >
+
+            <com.threehalf.tucao.view.CircleImageView
+                android:id="@+id/iv_itme_hottest_avater"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                wave:border_color="@color/white"
+                 >
+            </com.threehalf.tucao.view.CircleImageView>
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/margin_five"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_eighteen" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_tucaocontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:layout_marginBottom="@dimen/margin_ten"
+            android:paddingLeft="@dimen/margin_ten"
+            android:paddingRight="@dimen/margin_ten"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_fifteen" />
+
+        <ImageView
+            android:id="@+id/tv_item_tucaoimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_ten"
+            android:adjustViewBounds="true"
+            android:paddingLeft="@dimen/margin_ten"
+            android:paddingRight="@dimen/margin_ten"
+            android:scaleType="fitStart"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_ten"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_ten" >
+
+            <TextView
+                android:id="@+id/tv_itme_hottest_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="40赞" />
+
+            <TextView
+                android:id="@+id/tv_item_hotttest_commentnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="320吐槽" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/ll_itme_hottest_praise_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_five"
+                android:paddingTop="@dimen/margin_five"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_itme_hottest_praise_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_itme_is_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:layout_toRightOf="@+id/iv_itme_hottest_praise_icon"
+                    android:gravity="center|bottom"
+                    android:text="赞"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_itme_hottest_praise_icon"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center|bottom"
+                    android:text="+1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_eighteen"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_itme_hottest_comment_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_five"
+                android:paddingTop="@dimen/margin_five" >
+
+                <ImageView
+                    android:id="@+id/iv_itme_hottest_comment_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:gravity="center|top"
+                    android:text="@string/comment_text"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_itme_hottest_share_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_five"
+                android:paddingTop="@dimen/margin_five" >
+
+                <ImageView
+                    android:id="@+id/iv_itme_hottest_share_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:gravity="center|top"
+                    android:text="分享"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+

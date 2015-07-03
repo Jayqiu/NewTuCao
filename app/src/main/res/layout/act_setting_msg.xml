@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:transitionName="actionBar" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/text_size_fifteen"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_48"
+            android:text="声音提示"
+            android:layout_toLeftOf="@+id/s_sound"
+            android:layout_alignParentLeft="true"
+             />
+
+        <com.threehalf.tucao.view.materialdesign.Switch
+            android:id="@+id/s_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_28"
+            android:layout_marginRight="@dimen/margin_twenty"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/medium_gray_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/text_size_fifteen"
+            android:textStyle="bold"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_48"
+            android:text="振动提示"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/s_vibration"
+            android:layout_alignParentLeft="true" />
+
+        <com.threehalf.tucao.view.materialdesign.Switch
+            android:id="@id/s_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_28"
+            android:layout_marginRight="@dimen/margin_twenty"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/light_gray_color"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/text_size_fifteen"
+            android:textStyle="bold"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/margin_twenty"
+            android:paddingRight="@dimen/margin_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_48"
+            android:text="通知"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/s_all_notice"
+            android:layout_alignParentLeft="true" />
+
+        <com.threehalf.tucao.view.materialdesign.Switch
+            android:id="@id/s_all_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_28"
+            android:layout_marginRight="@dimen/margin_twenty"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/medium_gray_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_all_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/text_size_fifteen"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/margin_twenty"
+                android:paddingRight="@dimen/margin_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_48"
+                android:text="评论通知"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/s_comment_notice"
+                android:layout_alignParentLeft="true" />
+
+            <com.threehalf.tucao.view.materialdesign.Switch
+                android:id="@id/s_comment_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_28"
+                android:layout_marginRight="@dimen/margin_twenty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+              />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/medium_gray_color"
+            android:layout_width="fill_parent"
+            android:layout_height="0.30000007dip" />
+    </LinearLayout>
+</LinearLayout>
