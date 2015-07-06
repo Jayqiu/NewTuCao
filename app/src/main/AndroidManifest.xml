@@ -52,13 +52,18 @@
         <activity android:name="com.threehalf.tucao.activity.ActLogin" />
         <activity android:name="com.threehalf.tucao.activity.ActFeedback" />
         <activity android:name="com.threehalf.tucao.activity.ActSetingMsg" />
-        <activity android:name="com.threehalf.tucao.activity.ActTucaoDetail" />
+        <activity android:name="com.threehalf.tucao.activity.ActMe" />
+        <activity
+            android:name="com.threehalf.tucao.activity.ActTucaoDetail"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            />
         <activity
             android:name="com.threehalf.tucao.activity.ActReleaseTuCao"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+            android:windowSoftInputMode="adjustResize" />
         <!-- BmobPush start -->
         <service
             android:name="cn.bmob.push.lib.service.PushService"
@@ -70,6 +75,7 @@
                 <action android:name="cn.bmob.push.lib.service.PushService" />
             </intent-filter>
         </service>
+
         <receiver android:name="cn.bmob.push.PushReceiver">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

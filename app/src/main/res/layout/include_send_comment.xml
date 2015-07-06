@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_comment_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_4"
+        android:background="@color/theme_default_primary">
+
+
+
+            <!-- chatting_setmode_msg_btn 与chatting_setmode_keyboard_btn 进行切换 ，键盘和语音 -->
+
+            <ImageView
+                android:id="@+id/chat_biaoqing_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_forty"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_emoji_people_light" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_bottom"
+                android:layout_toRightOf="@+id/chat_biaoqing_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <com.way.ui.emoji.EmojiEditText
+                    android:id="@+id/et_sendmessage"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_forty"
+                    android:layout_centerVertical="true"
+                    android:background="@color/list_background"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:typeface="monospace"></com.way.ui.emoji.EmojiEditText>
+
+                <TextView
+                    android:id="@+id/btn_send"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/margin_forty"
+                    android:layout_height="@dimen/margin_forty"
+                    android:gravity="center"
+                    android:background="@drawable/send"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+        </RelativeLayout>
+        <!-- 聊天表情 -->
+
+        <!-- <com.way.ui.emoji.EmojiKeyboard
+             android:id="@+id/face_ll"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/show_grid_view1"
+             android:clickable="true"
+             android:focusable="true"
+             android:visibility="gone" />
+
+         <LinearLayout
+             android:id="@+id/show_capture_gridview"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/show_grid_view1"
+             android:background="@color/seaShell"
+             android:visibility="gone" >
+
+             <include
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 layout="@layout/show_capture_view" />
+         </LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>
+
+
